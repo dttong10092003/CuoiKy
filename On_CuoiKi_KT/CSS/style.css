@@ -1,0 +1,12 @@
+.link{
+    margin: 30px;
+}
+.tua{
+    font-size: 50px;
+    text-align: center;
+}
+footer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="banner">
+                <img src="../IMAGES/logo1.png" alt="banner-img" style="width: 100%;">
+            </div>
+        </header>
+
+        <div class="link">
+                <a href="../HTML/index.html" style="margin-right: 20px;">Đăng nhập</a>
+                <a href="#" id="dangky" data-toggle="modal" data-target="#modal">Đăng ký</a>
+        </div>
+
+        <div class="tua">
+            <p>DANH SÁCH THAM GIA ĐỘI ROBOCON KHOA CNTT</p>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>STT</th>
+                <th>Mã thành viên</th>
+                <th>Họ tên</th>
+                <th>Lớp</th>
+                <th>Ngày tham gia</th>
+                <th>Điện thoại</th>
+                <th>Email</th>
+            </tr>
+
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+
+
+        <footer>
+            <p>SVTH: Đinh Thanh Tòng</p>
+            <p>Mã số sinh viên: 21024521</p>
+            <p>Lớp: DHKTPM17A</p>
+        </footer>
+
+
+        <div id="modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p style="font-size: 37px;">THÔNG TIN CÁ NHÂN</p>
+                        <button class="close btn-close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" id="form">
+                            <div>
+                                <div class="row">
+                                    <label class="col-sm-4" for="mathanhvien">Mã thành viên: </label> 
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="mathanhvien" placeholder="Mã: K16-123456789">
+                                        <span class="ma-mes text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4" for="hoten">Họ tên: </label> 
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="hoten" placeholder="Họ tên: Tran Anh Dung">
+                                        <span class="hoten-mes text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4" for="lop">Lớp: </label> 
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="lop" placeholder="Lớp: DHKTPM16ATT">
+                                        <span class="lop-mes text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4" for="ngaythamgia">Ngày tham gia: </label> 
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="date" name="ngay" id="ngaythamgia">
+                                        <span class="ngay-mes text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4" for="sdt">Số điện thoại: </label> 
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="sdt" placeholder="SDT: 0xxx-xxx-xxx">
+                                        <span class="sdt-mes text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4" for="email">Email: </label> 
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" id="email" placeholder="Email: xxxxx@iuh.edu.vn">
+                                        <span class="email-mes text-danger">*</span>
+                                    </div>
+                                </div>
+
+                                <button style="width: 100%;" class="btn btn-success" id="btn-submit">Lưu</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="../JS/main.js"></script>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

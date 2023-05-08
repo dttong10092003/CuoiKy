@@ -1,0 +1,25 @@
+.banner{
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+.link{
+    margin-right: 10px;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+.sum{
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+#tong{
+    color: red;
+}
+footer{
+    border-top: 3px solid red;
+    text-align: right;
+    font-size: 20px;
+}

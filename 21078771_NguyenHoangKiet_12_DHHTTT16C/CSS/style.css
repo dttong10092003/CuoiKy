@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,
+label {
+    margin-bottom: 0;
+}
+
+
+/* header */
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* body */
+
+.body {
+    display: flex;
+    padding: 12px 0;
+}
+
+
+/* aside */
+
+.menu {
+    padding-left: 0;
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+
+/* content */
+
+.content {
+    flex: 1;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.modal-header h5 {
+    text-transform: uppercase;
+}
+
+tbody td {
+    border: 1px solid #dee2e6;
+}
+
+
+/* form */
+
+.input-group {
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.mes {
+    color: red;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #00cfb3;
+    padding: 8px;
+}

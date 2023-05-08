@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Đặt báo</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="banner">
+                <img src="../IMAGES/tuoitre.jpg" alt="banner-img" style="width: 100%;">
+            </div>
+        </header>
+
+        <div style="border-bottom: 3px solid red;">
+            <a class="link" href="../HTML/index.html">Trang chủ</a>
+            <a class="link" href="">Tin tức</a>
+            <a class="link" href="">Thể thao</a>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal">Đặt báo online</button>
+        </div>
+
+        <div class="title">
+            <p>DANH SÁCH ĐẶT BÁO 2023</p>
+        </div>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>STT</th>
+                <th>Loại báo</th>
+                <th>Kỳ hạn</th>
+                <th>Đơn giá</th>
+                <th>Mã độc giả</th>
+                <th>Địa chỉ nhận báo</th>
+                <th>Hình thức thanh toán</th>
+            </tr>
+
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+        <div class="sum">
+            <p>Tổng số: <span id="tong">xxxx</span></p>
+        </div>
+
+        <footer>
+            <p>21024521 - Đinh Thanh Tòng</p>
+        </footer>
+
+
+        <div id="modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p style="font-size: 20px;">THÔNG TIN KHÁCH HÀNG ĐẶT BÁO ONLINE</p>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" id="form">
+                            <div>
+                                <div>
+                                    <label for="dangkybao">Đăng ký báo</label>
+                                    <div>
+                                        <input type="checkbox" name="dangkybao" id="hangngay" value="Tuổi trẻ hàng ngày">
+                                        <label for="hangngay">Tuổi trẻ hàng ngày </label>
+                                        <input type="checkbox" name="dangkybao" id="chunhat" value="Tuổi trẻ chủ nhật">
+                                        <label for="chunhat">Tuổi trẻ chủ nhật </label>
+                                        <input type="checkbox" name="dangkybao" id="cuoi" value="Tuổi trẻ cười">
+                                        <label for="cuoi">Tuổi trẻ cười</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="kyhan">Kỳ hạn</label><br>
+                                    <select class="form-control" name="kyhan" id="kyhan">
+                                        <option value="3 tháng">3 tháng</option>
+                                        <option value="6 tháng">6 tháng</option>
+                                        <option value="1 năm">1 năm</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="dongia">Đơn giá</label><br>
+                                    <input class="form-control" type="text" value="300000" name="dongia" id="dongia" readonly>
+                                </div>
+                                <div>
+                                    <label for="madocgia">Mã độc giả</label><br>
+                                    <input class="form-control" type="text" name="madocgia" id="madocgia"><br>
+                                    <span class="ma-mes text-danger">*</span>
+                                </div>
+                                <div>
+                                    <label for="diachi">Địa chỉ nhận báo</label><br>
+                                    <input class="form-control" type="text" name="diachi" id="diachi"><br>
+                                    <span class="diachi-mes text-danger">*</span>
+                                </div>
+                                <div>
+                                    <label for="thanhtoan">Hình thức thanh toán</label><br>
+                                    <input type="radio" value="Chuyển khoản" name="thanhtoan" id="chuyenkhoan" checked>Chuyển khoản
+                                    <input type="radio" value="Momo" name="thanhtoan" id="momo">Momo
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-primary" id="btn-submit">Đặt báo</button>
+                                    <button class="btn btn-primary" data-dismiss="modal" id="huy">Hủy</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p style="text-align: right; font-size: 20px;">21024521-Đinh Thanh Tòng</p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="../JS/main.js"></script>
+
+
+
+
+
+</body>
+</html>
