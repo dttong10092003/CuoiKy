@@ -86,6 +86,7 @@ function reset(){
     $("#modal").modal("hide");
 }
 
+
 $("#btn-submit").click(()=>{
     const ma = checkMa();
     const diaChi = checkDiaChi();
@@ -93,7 +94,8 @@ $("#btn-submit").click(()=>{
     if (ma && diaChi) {
         themMoi();
         reset();
-        console.log(stt);
-        $("#tong").val(stt);
+        
+        const tong = document.getElementById("tong");
+        tong.innerHTML = stt;
     }
 })
